@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 if (Build.VERSION.SDK_INT >= 24) {
-                    imageUri = FileProvider.getUriForFile(MainActivity.this, "com.example.dishesidentification", outputImage);
+                    imageUri = FileProvider.getUriForFile(MainActivity.this, "com.example.dishesidentification.fileprovider", outputImage);
                 }
                 else {
                     imageUri = Uri.fromFile(outputImage);
